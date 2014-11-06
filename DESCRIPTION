@@ -1,0 +1,7 @@
+Package: water
+Maintainer: WesleyGOI <picy2k@gmail.com>
+Author: WesleyGOI
+Version: 0.0.1
+License: GPL-3
+Title: water: server
+Description: misc functions
