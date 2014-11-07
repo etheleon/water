@@ -12,13 +12,12 @@ The package holds several R functions
 #Usage
 
 ```Rscript
-
 library(water)
-mc()
+mc()    #call mc() which wraps set.cores() and calls the parallel package
 
-someList <- mclapply(someVector, function(x){
-    some steps 
-    ...
-    
-})
+someList <- mclapply(someVector, 
+    function(x){
+        some steps 
+        ...
+    })
 ```
