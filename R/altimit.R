@@ -19,7 +19,7 @@ set.core <- structure(function#Setting cores
             }
         }
     }
-    options('cores' = n)
+    options('mc.cores' = n)
 })
 
 mc <- structure(function #wrapper function to call 
