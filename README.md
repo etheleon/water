@@ -5,8 +5,8 @@ The package holds several R functions
 
 |Function| what it does|
 |----|----|
-|set.cores()| finds out how many cores were allocated|
-|mc()|calls set core and the parallel library()|
+|set.cores()| determines the number of CPU cores allocated and restricts any multicore process to this number|
+|mc()|wrapper function which calls set.cores() and the parallel library|
 
 
 #Usage
