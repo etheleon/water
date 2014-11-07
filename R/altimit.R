@@ -7,7 +7,7 @@ set.core <- structure(function#Setting cores
     {
         n <- Sys.getenv('NSLOTS')
         if(n <= 0)
-        {
+        {   #which means that its on the head node
             hostname <- Sys.getenv('HOSTNAME')
             if(length(grep("c.*\\d.*.local$", hostname)) > 0)   #the regex is specific to water compute-0-0; this will be a qlogin case
             {
