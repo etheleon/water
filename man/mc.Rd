@@ -11,4 +11,7 @@
 
 
 
-
+\examples{
+mc()
+print(options('mc.cores'))
+}

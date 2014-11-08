@@ -1,4 +1,4 @@
-set.core <- structure(function#Setting cores
+set.cores <- structure(function#Setting cores
 (n = NA ##<< The number of cores
 ### Function sets the number of cores to be used by Rscripts using the parallel package. For older package:multicore use XC's chaos package
 ){
@@ -26,4 +26,7 @@ mc <- structure(function #wrapper function to call
 (){
     library(parallel)
     set.cores()
+}, ex=function(){
+    mc()
+    print(options('mc.cores'))
 })
